@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopERP.Backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+cb6374e7e0667133611a30f0526beedc7035de9a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+99a64b30237973adf8831fe0539eae73ee52ca42")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopERP.Backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopERP.Backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
