@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopERP.Rebuild.Desktop")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+853be67f387fa9745a1bf18fad95d73c888dc54d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+06338dd0949d9448f7c56f424eadbe52b60411ea")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopERP.Rebuild.Desktop")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopERP.Rebuild.Desktop")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

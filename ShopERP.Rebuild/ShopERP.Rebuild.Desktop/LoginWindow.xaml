@@ -55,7 +55,7 @@
             <Border Grid.Column="1" Background="{StaticResource BrushNavSurface}" CornerRadius="0,20,20,0" Padding="60">
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock Text="NEXUS ACCESS" Foreground="{StaticResource BrushPrimary}" FontSize="12" FontWeight="Bold" Margin="0,0,0,12" />
-                    <TextBlock Text="Welcome Back" Foreground="White" FontSize="32" FontWeight="Bold" Margin="0,0,0,8" />
+                    <TextBlock Text="Welcome Back" Foreground="{StaticResource BrushTextPrimary}" FontSize="32" FontWeight="Bold" Margin="0,0,0,8" />
                     <TextBlock Text="Verify your identification to continue." Foreground="{StaticResource BrushTextSecondary}" FontSize="14" Margin="0,0,0,40" />
 
                     <!-- USERNAME -->
@@ -90,7 +90,7 @@
             </Border>
             
             <!-- Close Button -->
-            <Button Content="✕" Width="40" Height="40" Background="Transparent" Foreground="White" 
+                <Button Content="✕" Width="40" Height="40" Background="Transparent" Foreground="{StaticResource BrushTextPrimary}" 
                     HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Click="OnCloseClick">
                 <Button.Style>
                     <Style TargetType="Button">
