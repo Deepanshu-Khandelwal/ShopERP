@@ -59,7 +59,7 @@ namespace ShopERP.Rebuild.Desktop.Views.Pages.Lists {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ShopERP.Rebuild.Desktop;V1.0.0.0;component/views/pages/lists/productspage.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ShopERP.Rebuild.Desktop;component/views/pages/lists/productspage.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\Pages\Lists\ProductsPage.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
