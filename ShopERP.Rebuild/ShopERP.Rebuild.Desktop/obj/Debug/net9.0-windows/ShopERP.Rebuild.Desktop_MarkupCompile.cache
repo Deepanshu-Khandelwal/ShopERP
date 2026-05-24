@@ -1,5 +1,5 @@
 ﻿ShopERP.Rebuild.Desktop
-1.0.0.0
+
 
 winexe
 C#
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Desktop\App.xaml
 28407277823
 
-76-1101618854
+741281166583
 371-2145014133
 LoginWindow.xaml;MainWindow.xaml;RegistrationWindow.xaml;Styles\Theme.xaml;Views\Pages\Forms\BillingForm.xaml;Views\Pages\Forms\CustomersForm.xaml;Views\Pages\Forms\DoctorsForm.xaml;Views\Pages\Forms\PaymentsForm.xaml;Views\Pages\Forms\ProductsForm.xaml;Views\Pages\Forms\PurchaseOrdersForm.xaml;Views\Pages\Forms\PurchasesForm.xaml;Views\Pages\Forms\ReturnsForm.xaml;Views\Pages\Forms\SalesForm.xaml;Views\Pages\Lists\BillingPage.xaml;Views\Pages\Lists\CustomersPage.xaml;Views\Pages\Lists\DoctorsPage.xaml;Views\Pages\Lists\LedgersPage.xaml;Views\Pages\Lists\PaymentsPage.xaml;Views\Pages\Lists\ProductsPage.xaml;Views\Pages\Lists\PurchaseOrdersPage.xaml;Views\Pages\Lists\PurchasesPage.xaml;Views\Pages\Lists\ReturnsPage.xaml;Views\Pages\Lists\SalesPage.xaml;Views\Pages\Lists\StockPage.xaml;Views\Pages\Shared\DashboardPage.xaml;Views\Pages\Shared\NotificationsPage.xaml;Views\Pages\Shared\ReportsPage.xaml;Views\Pages\Shared\SyncPage.xaml;
 
-True
+False
 

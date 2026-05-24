@@ -457,3 +457,4 @@ C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Backend\obj\Debug\net9.0\refint
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Backend\obj\Debug\net9.0\ShopERP.Backend.pdb
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Backend\obj\Debug\net9.0\ShopERP.Backend.genruntimeconfig.cache
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Backend\obj\Debug\net9.0\ref\ShopERP.Backend.dll
+C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Backend\obj\Debug\net9.0\ShopERP.Backend.sourcelink.json

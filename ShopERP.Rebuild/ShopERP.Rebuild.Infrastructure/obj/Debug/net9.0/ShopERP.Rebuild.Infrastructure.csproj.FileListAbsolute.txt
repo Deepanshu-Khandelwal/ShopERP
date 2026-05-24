@@ -28,3 +28,4 @@ C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Infrast
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Infrastructure\obj\Debug\net9.0\refint\ShopERP.Rebuild.Infrastructure.dll
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Infrastructure\obj\Debug\net9.0\ShopERP.Rebuild.Infrastructure.pdb
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Infrastructure\obj\Debug\net9.0\ref\ShopERP.Rebuild.Infrastructure.dll
+C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Infrastructure\obj\Debug\net9.0\ShopERP.Rebuild.Infrastructure.sourcelink.json

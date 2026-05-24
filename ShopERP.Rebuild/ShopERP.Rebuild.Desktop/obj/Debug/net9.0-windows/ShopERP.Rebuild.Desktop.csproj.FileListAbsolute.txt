@@ -452,3 +452,4 @@ C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Desktop
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Desktop\obj\Debug\net9.0-windows\ShopERP.Rebuild.Desktop.pdb
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Desktop\obj\Debug\net9.0-windows\ShopERP.Rebuild.Desktop.genruntimeconfig.cache
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Desktop\obj\Debug\net9.0-windows\ref\ShopERP.Rebuild.Desktop.dll
+C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Desktop\obj\Debug\net9.0-windows\ShopERP.Rebuild.Desktop.sourcelink.json

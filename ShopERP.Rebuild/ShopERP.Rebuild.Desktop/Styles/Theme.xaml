@@ -4,21 +4,21 @@
 
     <!-- MEDICORE PREMIUM DESIGN SYSTEM -->
     
-    <!-- Color Palette -->
-    <Color x:Key="ColorPrimary">#10B981</Color> <!-- Emerald 500 -->
-    <Color x:Key="ColorPrimaryDark">#059669</Color>
-    <Color x:Key="ColorPrimaryLight">#34D399</Color>
-    
-    <Color x:Key="ColorSecondary">#0EA5E9</Color> <!-- Sky 500 -->
+    <!-- Color Palette (Light Theme) -->
+    <Color x:Key="ColorPrimary">#0F766E</Color> <!-- Teal / Primary -->
+    <Color x:Key="ColorPrimaryDark">#0b5e57</Color>
+    <Color x:Key="ColorPrimaryLight">#34d399</Color>
+
+    <Color x:Key="ColorSecondary">#0EA5E9</Color>
     <Color x:Key="ColorSecondaryDark">#0284C7</Color>
-    
-    <Color x:Key="ColorBgDeep">#0F172A</Color> <!-- Slate 900 -->
-    <Color x:Key="ColorBgSurface">#1E293B</Color> <!-- Slate 800 -->
-    <Color x:Key="ColorBgSurfaceElevated">#334155</Color> <!-- Slate 700 -->
-    
-    <Color x:Key="ColorTextPrimary">#F8FAFC</Color> <!-- Slate 50 -->
-    <Color x:Key="ColorTextSecondary">#94A3B8</Color> <!-- Slate 400 -->
-    <Color x:Key="ColorTextMuted">#64748B</Color> <!-- Slate 500 -->
+
+    <Color x:Key="ColorBgDeep">#F8FAFC</Color> <!-- very light background -->
+    <Color x:Key="ColorBgSurface">#FFFFFF</Color> <!-- surface/panels -->
+    <Color x:Key="ColorBgSurfaceElevated">#F1F5F9</Color> <!-- elevated surface -->
+
+    <Color x:Key="ColorTextPrimary">#0F172A</Color> <!-- dark text -->
+    <Color x:Key="ColorTextSecondary">#475569</Color>
+    <Color x:Key="ColorTextMuted">#64748B</Color>
     
     <Color x:Key="ColorDanger">#EF4444</Color>
     <Color x:Key="ColorWarning">#F59E0B</Color>
@@ -48,19 +48,19 @@
 
     <SolidColorBrush x:Key="WindowBackground" Color="{StaticResource ColorBgDeep}" />
     <SolidColorBrush x:Key="BrushSurface" Color="{StaticResource ColorBgSurface}" />
-    <SolidColorBrush x:Key="BrushSurfaceAlt" Color="#283548" />
-    <SolidColorBrush x:Key="BrushSurfaceSoft" Color="#243249" />
-    <SolidColorBrush x:Key="BrushBorder" Color="#334155" />
-    <SolidColorBrush x:Key="BrushBorderSoft" Color="#1E293B" />
+    <SolidColorBrush x:Key="BrushSurfaceAlt" Color="{StaticResource ColorBgSurfaceElevated}" />
+    <SolidColorBrush x:Key="BrushSurfaceSoft" Color="#F8F9FB" />
+    <SolidColorBrush x:Key="BrushBorder" Color="#E2E8F0" />
+    <SolidColorBrush x:Key="BrushBorderSoft" Color="#F1F5F9" />
     <SolidColorBrush x:Key="BrushSurfaceElevated" Color="{StaticResource ColorBgSurfaceElevated}" />
     
     <!-- Sidebar / Nav Brushes -->
-    <SolidColorBrush x:Key="BrushNavSurface" Color="#111827" />
-    <SolidColorBrush x:Key="BrushNavBorder" Color="#1F2937" />
-    <SolidColorBrush x:Key="BrushNavActive" Color="#10B981" Opacity="0.1" />
-    <SolidColorBrush x:Key="BrushNavSurfaceElevated" Color="#1F2937" />
-    <SolidColorBrush x:Key="BrushTopNavText" Color="#D1D5DB" />
-    <SolidColorBrush x:Key="BrushShellTextSubtle" Color="#94A3B8" />
+    <SolidColorBrush x:Key="BrushNavSurface" Color="{StaticResource ColorBgSurface}" />
+    <SolidColorBrush x:Key="BrushNavBorder" Color="{StaticResource BrushBorder}" />
+    <SolidColorBrush x:Key="BrushNavActive" Color="#10B981" Opacity="0.12" />
+    <SolidColorBrush x:Key="BrushNavSurfaceElevated" Color="{StaticResource ColorBgSurfaceElevated}" />
+    <SolidColorBrush x:Key="BrushTopNavText" Color="{StaticResource ColorTextPrimary}" />
+    <SolidColorBrush x:Key="BrushShellTextSubtle" Color="{StaticResource ColorTextSecondary}" />
 
     <!-- Control Styles -->
     <Style TargetType="Window">
@@ -188,10 +188,10 @@
 
     <!-- Input Styles -->
     <Style TargetType="TextBox">
-        <Setter Property="Background" Value="#0F172A" />
-        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Background" Value="{StaticResource BrushSurface}" />
+        <Setter Property="Foreground" Value="{StaticResource BrushTextPrimary}" />
         <Setter Property="CaretBrush" Value="{StaticResource BrushPrimary}" />
-        <Setter Property="BorderBrush" Value="#334155" />
+        <Setter Property="BorderBrush" Value="{StaticResource BrushBorder}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Padding" Value="12,10" />
         <Setter Property="Template">
@@ -215,10 +215,10 @@
     </Style>
 
     <Style TargetType="PasswordBox">
-        <Setter Property="Background" Value="#0F172A" />
-        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Background" Value="{StaticResource BrushSurface}" />
+        <Setter Property="Foreground" Value="{StaticResource BrushTextPrimary}" />
         <Setter Property="CaretBrush" Value="{StaticResource BrushPrimary}" />
-        <Setter Property="BorderBrush" Value="#334155" />
+        <Setter Property="BorderBrush" Value="{StaticResource BrushBorder}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="Padding" Value="12,10" />
         <Setter Property="Template">

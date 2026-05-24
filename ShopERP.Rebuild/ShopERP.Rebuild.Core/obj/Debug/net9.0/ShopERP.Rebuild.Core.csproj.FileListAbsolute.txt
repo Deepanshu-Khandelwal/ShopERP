@@ -20,3 +20,4 @@ C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\ob
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\refint\ShopERP.Rebuild.Core.dll
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ShopERP.Rebuild.Core.pdb
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ref\ShopERP.Rebuild.Core.dll
+C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ShopERP.Rebuild.Core.sourcelink.json
