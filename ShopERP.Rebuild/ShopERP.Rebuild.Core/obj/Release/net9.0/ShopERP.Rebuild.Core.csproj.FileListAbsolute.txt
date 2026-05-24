@@ -1,0 +1,11 @@
+c:\Users\asusw\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\bin\Release\net9.0\ShopERP.Rebuild.Core.deps.json
+C:\Users\asusw\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\bin\Release\net9.0\ShopERP.Rebuild.Core.dll
+C:\Users\asusw\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\bin\Release\net9.0\ShopERP.Rebuild.Core.pdb
+C:\Users\asusw\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Release\net9.0\ShopERP.Rebuild.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asusw\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Release\net9.0\ShopERP.Rebuild.Core.AssemblyInfoInputs.cache
+C:\Users\asusw\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Release\net9.0\ShopERP.Rebuild.Core.AssemblyInfo.cs
+C:\Users\asusw\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Release\net9.0\ShopERP.Rebuild.Core.csproj.CoreCompileInputs.cache
+C:\Users\asusw\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Release\net9.0\ShopERP.Rebuild.Core.dll
+C:\Users\asusw\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Release\net9.0\refint\ShopERP.Rebuild.Core.dll
+C:\Users\asusw\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Release\net9.0\ShopERP.Rebuild.Core.pdb
+c:\Users\asusw\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Release\net9.0\ref\ShopERP.Rebuild.Core.dll

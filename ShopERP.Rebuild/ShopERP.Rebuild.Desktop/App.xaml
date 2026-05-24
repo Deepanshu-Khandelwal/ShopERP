@@ -1,0 +1,93 @@
+<Application x:Class="ShopERP.Rebuild.Desktop.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:vm="clr-namespace:ShopERP.Rebuild.Desktop.ViewModels.Pages"
+             xmlns:views="clr-namespace:ShopERP.Rebuild.Desktop.Views.Pages"
+             xmlns:lists="clr-namespace:ShopERP.Rebuild.Desktop.Views.Pages.Lists"
+             xmlns:forms="clr-namespace:ShopERP.Rebuild.Desktop.Views.Pages.Forms"
+             xmlns:shared="clr-namespace:ShopERP.Rebuild.Desktop.Views.Pages.Shared"
+             xmlns:converters="clr-namespace:ShopERP.Rebuild.Desktop.Converters">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Styles/Theme.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <converters:StringToVisibilityConverter x:Key="StringToVisibilityConverter" />
+            <converters:InverseBoolConverter x:Key="InverseBoolConverter" />
+
+            <DataTemplate DataType="{x:Type vm:DashboardPageViewModel}">
+                <shared:DashboardPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ProductsPageViewModel}">
+                <lists:ProductsPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ProductsFormPageViewModel}">
+                <forms:ProductsForm />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:CustomersPageViewModel}">
+                <lists:CustomersPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:CustomersFormPageViewModel}">
+                <forms:CustomersForm />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:DoctorsPageViewModel}">
+                <lists:DoctorsPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:DoctorsFormPageViewModel}">
+                <forms:DoctorsForm />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:SalesPageViewModel}">
+                <lists:SalesPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:SalesFormPageViewModel}">
+                <forms:SalesForm />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:PurchasesPageViewModel}">
+                <lists:PurchasesPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:PurchasesFormPageViewModel}">
+                <forms:PurchasesForm />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ReportsPageViewModel}">
+                <shared:ReportsPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:StockPageViewModel}">
+                <lists:StockPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:NotificationsPageViewModel}">
+                <shared:NotificationsPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:LedgersPageViewModel}">
+                <lists:LedgersPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:BillingPageViewModel}">
+                <lists:BillingPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:BillingFormPageViewModel}">
+                <forms:BillingForm />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ReturnsPageViewModel}">
+                <lists:ReturnsPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:ReturnsFormPageViewModel}">
+                <forms:ReturnsForm />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:PaymentsPageViewModel}">
+                <lists:PaymentsPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:PaymentsFormPageViewModel}">
+                <forms:PaymentsForm />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:PurchaseOrdersPageViewModel}">
+                <lists:PurchaseOrdersPage />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:PurchaseOrdersFormPageViewModel}">
+                <forms:PurchaseOrdersForm />
+            </DataTemplate>
+            <DataTemplate DataType="{x:Type vm:SyncPageViewModel}">
+                <shared:SyncPage />
+            </DataTemplate>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

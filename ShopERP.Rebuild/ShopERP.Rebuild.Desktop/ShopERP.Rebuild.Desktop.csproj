@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ShopERP.Rebuild.Core\ShopERP.Rebuild.Core.csproj" />
+    <ProjectReference Include="..\ShopERP.Rebuild.Infrastructure\ShopERP.Rebuild.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\ShopERP.Backend\ShopERP.Backend.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="9.0.13" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.13" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="9.0.13" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+</Project>

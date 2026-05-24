@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "fvWdNkQmMsA=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\asusw_6kfs7ug\\.nuget\\packages\\microsoft.netcore.app.ref\\9.0.15\\microsoft.netcore.app.ref.9.0.15.nupkg.sha512",
+    "C:\\Users\\asusw_6kfs7ug\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\9.0.15\\microsoft.windowsdesktop.app.ref.9.0.15.nupkg.sha512",
+    "C:\\Users\\asusw_6kfs7ug\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\9.0.15\\microsoft.aspnetcore.app.ref.9.0.15.nupkg.sha512"
+  ],
+  "logs": []
+}

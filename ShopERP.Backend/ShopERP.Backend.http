@@ -1,0 +1,26 @@
+﻿@ShopERP.Backend_HostAddress = http://localhost:5169
+
+GET {{ShopERP.Backend_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
+
+POST {{ShopERP.Backend_HostAddress}}/api/backup/run
+Accept: application/json
+
+###
+
+GET {{ShopERP.Backend_HostAddress}}/api/backup/history
+Accept: application/json
+
+###
+
+POST {{ShopERP.Backend_HostAddress}}/api/sync/mysql
+Accept: application/json
+
+###
+
+POST {{ShopERP.Backend_HostAddress}}/api/sync/mysql?fullSync=true
+Accept: application/json
+
+###

@@ -1,0 +1,27 @@
+export function uid() {
+  return Math.random().toString(36).slice(2);
+}
+
+export function ActionIcon({ kind }) {
+  if (kind === 'view') {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="action-icon-svg">
+        <path d="M12 5C6.5 5 2.1 8.4 1 12c1.1 3.6 5.5 7 11 7s9.9-3.4 11-7c-1.1-3.6-5.5-7-11-7zm0 11a4 4 0 1 1 0-8 4 4 0 0 1 0 8z" />
+      </svg>
+    );
+  }
+
+  if (kind === 'edit') {
+    return (
+      <svg viewBox="0 0 24 24" aria-hidden="true" className="action-icon-svg">
+        <path d="M3 17.2V21h3.8L18 9.8 14.2 6 3 17.2zm17.7-10.5a1 1 0 0 0 0-1.4L18.7 3.3a1 1 0 0 0-1.4 0L15.4 5.2l3.8 3.8 1.5-1.5z" />
+      </svg>
+    );
+  }
+
+  return (
+    <svg viewBox="0 0 24 24" aria-hidden="true" className="action-icon-svg">
+      <path d="M6 2h12a2 2 0 0 1 2 2v15l-4-3-4 3-4-3-4 3V4a2 2 0 0 1 2-2zm2 5v2h8V7H8zm0 4v2h8v-2H8z" />
+    </svg>
+  );
+}

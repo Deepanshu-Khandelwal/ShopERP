@@ -1,0 +1,121 @@
+<UserControl x:Class="ShopERP.Rebuild.Desktop.Views.Pages.Forms.ProductsForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Margin="0,0,0,32">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <Button Content="← BACK" Style="{StaticResource ActionButtonStyle}" Width="90" Height="36" VerticalAlignment="Top"
+                        Command="{Binding DataContext.NavigateCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                        CommandParameter="ProductsList" />
+                
+                <StackPanel Grid.Column="1" Margin="24,0,0,0">
+                    <TextBlock Text="Medication Entry" Style="{StaticResource PageTitleStyle}" />
+                    <TextBlock Text="Define pharmacological properties and inventory thresholds." Style="{StaticResource PageSubtitleStyle}" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Form Layout -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Main Fields -->
+            <Border Grid.Column="0" Style="{StaticResource ModernCard}" Margin="0,0,24,0">
+                <StackPanel>
+                    <TextBlock Text="Core Identification" Style="{StaticResource SectionTitleStyle}" Margin="0,0,0,24" />
+                    
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="24" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Medication Brand Name" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <TextBox Text="{Binding ProductName, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,16" />
+
+                            <TextBlock Text="Active Ingredient (Generic Name)" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <TextBox Text="{Binding GenericName, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,16" />
+
+                            <TextBlock Text="Manufacturer / Lab" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <TextBox Text="{Binding Manufacturer, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,16" />
+                            
+                            <TextBlock Text="Medication Category" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <TextBox Text="{Binding Category, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,16" />
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Batch Identifier" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <TextBox Text="{Binding BatchNo, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,16" />
+
+                            <TextBlock Text="Expiration Date" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <DatePicker SelectedDate="{Binding Expiry}" Margin="0,0,0,16" Padding="12,8" />
+
+                            <TextBlock Text="Medication Status" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <ComboBox ItemsSource="{Binding ProductStatusOptions}" SelectedItem="{Binding ProductStatus}" Padding="12,10" Style="{StaticResource {x:Type ComboBox}}" Margin="0,0,0,16" />
+
+                            <TextBlock Text="Minimum Inventory Limit" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <TextBox Text="{Binding MinStockLevel, UpdateSourceTrigger=PropertyChanged}" Margin="0,0,0,24" />
+                            
+                            <TextBlock Text="Taxation Multiplier (GST %)" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <TextBox Text="{Binding GstPercent, UpdateSourceTrigger=PropertyChanged}" />
+                        </StackPanel>
+                    </Grid>
+
+                    <!-- Financials -->
+                    <TextBlock Text="Financial Valuation" Style="{StaticResource SectionTitleStyle}" Margin="0,32,0,24" />
+                    <UniformGrid Columns="3">
+                        <StackPanel Margin="0,0,16,0">
+                            <TextBlock Text="Procurement Rate" Foreground="{StaticResource BrushTextMuted}" FontSize="11" Margin="0,0,0,8" />
+                            <TextBox Text="{Binding PurchaseRate, UpdateSourceTrigger=PropertyChanged}" />
+                        </StackPanel>
+                        <StackPanel Margin="0,0,16,0">
+                            <TextBlock Text="Maximum Retail Price (MRP)" Foreground="{StaticResource BrushTextMuted}" FontSize="11" Margin="0,0,0,8" />
+                            <TextBox Text="{Binding Mrp, UpdateSourceTrigger=PropertyChanged}" />
+                        </StackPanel>
+                        <StackPanel>
+                            <TextBlock Text="Dispensing Rate" Foreground="{StaticResource BrushTextMuted}" FontSize="11" Margin="0,0,0,8" />
+                            <TextBox Text="{Binding SaleRate, UpdateSourceTrigger=PropertyChanged}" />
+                        </StackPanel>
+                    </UniformGrid>
+                </StackPanel>
+            </Border>
+
+            <!-- Sidebar / Info Panels -->
+            <StackPanel Grid.Column="1">
+                <Border Style="{StaticResource ModernCard}" Margin="0,0,0,24">
+                    <StackPanel>
+                        <TextBlock Text="Node Operations" Style="{StaticResource SectionTitleStyle}" Margin="0,0,0,20" />
+                        <Button Content="COMMIT CHANGES" Style="{StaticResource PrimaryButtonStyle}" Height="50" Margin="0,0,0,12" Command="{Binding SaveCommand}" />
+                        <Button Content="RESET NODE" Style="{StaticResource ActionButtonStyle}" Height="40" Margin="0,0,0,12" Command="{Binding NewFormCommand}" />
+                        <Button Content="DISCARD" Style="{StaticResource DeleteActionButtonStyle}" Height="40"
+                                Command="{Binding DataContext.NavigateCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                CommandParameter="ProductsList" />
+                    </StackPanel>
+                </Border>
+
+                <Border Style="{StaticResource ModernCard}" Background="#0AFFFFFF">
+                    <StackPanel>
+                        <TextBlock Text="Safety Notice" Foreground="White" FontWeight="Bold" Margin="0,0,0,8" />
+                        <TextBlock Text="Ensure 'Expiration Date' matches the physically verified batch. Incorrect registry can lead to dispensing audits." Foreground="{StaticResource BrushTextSecondary}" FontSize="12" TextWrapping="Wrap" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

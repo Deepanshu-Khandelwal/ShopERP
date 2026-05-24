@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CityCare Medical Store</title>
+  <style>
+    :root {
+      --paper: #f6f3ea;
+      --ink: #1f2a1f;
+      --accent: #0f6b5b;
+      --accent-soft: #d9efe9;
+      --warn: #af2f2f;
+      --card: #ffffff;
+      --line: #d7d0c3;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", "Trebuchet MS", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at 10% 20%, #f3ead8 0, transparent 35%),
+        radial-gradient(circle at 90% 20%, #d6efe2 0, transparent 30%),
+        var(--paper);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 20px;
+      background: linear-gradient(120deg, #204d43, #0f6b5b);
+      color: #fff;
+      border-bottom: 4px solid #0a3e35;
+    }
+
+    h1 { margin: 0; font-size: 1.6rem; letter-spacing: 0.5px; }
+
+    .sub { margin-top: 6px; opacity: 0.9; }
+
+    main {
+      padding: 18px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      box-shadow: 0 8px 22px rgba(45, 36, 22, 0.08);
+      padding: 14px;
+      animation: rise 400ms ease both;
+    }
+
+    @keyframes rise {
+      from { transform: translateY(10px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .card h2 { margin: 0 0 10px; font-size: 1.1rem; color: #214338; }
+
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+    .full { grid-column: 1 / -1; }
+
+    input, select, button {
+      width: 100%;
+      padding: 9px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      font-size: 0.92rem;
+    }
+
+    button {
+      background: var(--accent);
+      color: #fff;
+      border: 0;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    button:hover { filter: brightness(0.95); }
+
+    .muted {
+      margin-top: 10px;
+      font-size: 0.82rem;
+      color: #516055;
+    }
+
+    .list {
+      max-height: 220px;
+      overflow: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 8px;
+      background: #fffdfa;
+    }
+
+    .item {
+      padding: 7px;
+      border-bottom: 1px dashed #d6cfbf;
+      font-size: 0.9rem;
+    }
+
+    .item:last-child { border-bottom: none; }
+    .danger { color: var(--warn); font-weight: 600; }
+
+    @media (max-width: 640px) {
+      .grid { grid-template-columns: 1fr; }
+      header { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CityCare Medical Store Ops Console</h1>
+    <div class="sub">Fast purchase, sales, stock, and alerts workflow</div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Quick Purchase Entry</h2>
+      <div class="grid" id="purchaseForm">
+        <input placeholder="Bill No" id="pBillNo">
+        <input type="number" placeholder="Supplier Id" id="pSupplierId">
+        <input class="full" placeholder="Product Id" type="number" id="pProductId">
+        <input placeholder="Batch" id="pBatch">
+        <input type="number" placeholder="Qty" id="pQty">
+        <input type="number" step="0.01" placeholder="Rate" id="pRate">
+        <input type="number" step="0.01" placeholder="MRP" id="pMrp">
+        <input type="number" step="0.01" placeholder="GST %" id="pGst" value="12">
+        <button class="full" onclick="createPurchase()">Save Purchase</button>
+      </div>
+      <div class="muted" id="purchaseMsg"></div>
+    </section>
+
+    <section class="card">
+      <h2>Quick Sales Entry</h2>
+      <div class="grid">
+        <input placeholder="Bill No" id="sBillNo">
+        <select id="sPaymentType">
+          <option value="1">Cash</option>
+          <option value="2">Credit</option>
+          <option value="3">UPI</option>
+          <option value="4">Card</option>
+          <option value="5">BankTransfer</option>
+        </select>
+        <input type="number" placeholder="Customer Id (optional)" id="sCustomerId">
+        <input type="number" placeholder="Doctor Id (optional)" id="sDoctorId">
+        <input type="number" placeholder="Product Id" id="sProductId">
+        <input type="number" placeholder="Batch Id" id="sBatchId">
+        <input type="number" placeholder="Qty" id="sQty">
+        <input type="number" step="0.01" placeholder="Paid Amount" id="sPaid">
+        <button class="full" onclick="createSale()">Save Sale</button>
+      </div>
+      <div class="muted" id="salesMsg"></div>
+    </section>
+
+    <section class="card">
+      <h2>Low Stock Alerts</h2>
+      <button onclick="loadLowStock()">Refresh Low Stock</button>
+      <div class="list" id="lowStockList"></div>
+    </section>
+
+    <section class="card">
+      <h2>Expiry Alerts (90 Days)</h2>
+      <button onclick="loadExpiry()">Refresh Expiry</button>
+      <div class="list" id="expiryList"></div>
+    </section>
+  </main>
+
+  <script>
+    async function createPurchase() {
+      const payload = {
+        billNo: document.getElementById('pBillNo').value,
+        supplierId: Number(document.getElementById('pSupplierId').value),
+        billDate: new Date().toISOString(),
+        lessDiscount: 0,
+        roundOff: 0,
+        items: [{
+          productId: Number(document.getElementById('pProductId').value),
+          batchNo: document.getElementById('pBatch').value,
+          quantity: Number(document.getElementById('pQty').value),
+          mrp: Number(document.getElementById('pMrp').value),
+          rate: Number(document.getElementById('pRate').value),
+          expiryDate: new Date(new Date().setFullYear(new Date().getFullYear() + 1)).toISOString(),
+          discountPercent: 0,
+          gstPercent: Number(document.getElementById('pGst').value)
+        }]
+      };
+
+      const res = await fetch('/api/purchases', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      document.getElementById('purchaseMsg').textContent = res.ok ? 'Purchase saved.' : 'Purchase failed.';
+    }
+
+    async function createSale() {
+      const payload = {
+        billNo: document.getElementById('sBillNo').value,
+        billDate: new Date().toISOString(),
+        paymentType: Number(document.getElementById('sPaymentType').value),
+        customerId: toNullableNumber('sCustomerId'),
+        doctorId: toNullableNumber('sDoctorId'),
+        discountPercent: 0,
+        paidAmount: Number(document.getElementById('sPaid').value || 0),
+        items: [{
+          productId: Number(document.getElementById('sProductId').value),
+          stockBatchId: Number(document.getElementById('sBatchId').value),
+          quantity: Number(document.getElementById('sQty').value)
+        }]
+      };
+
+      const res = await fetch('/api/sales', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(payload)
+      });
+
+      document.getElementById('salesMsg').textContent = res.ok ? 'Sale saved.' : 'Sale failed.';
+    }
+
+    function toNullableNumber(id) {
+      const val = document.getElementById(id).value;
+      return val ? Number(val) : null;
+    }
+
+    async function loadLowStock() {
+      const res = await fetch('/api/products/low-stock');
+      const data = await res.json();
+      const el = document.getElementById('lowStockList');
+      el.innerHTML = data.length
+        ? data.map(x => `<div class="item danger">${x.product.name} | Batch ${x.batchNo} | Qty ${x.quantity}</div>`).join('')
+        : '<div class="item">No low stock items.</div>';
+    }
+
+    async function loadExpiry() {
+      const res = await fetch('/api/products/expiry?days=90');
+      const data = await res.json();
+      const el = document.getElementById('expiryList');
+      el.innerHTML = data.length
+        ? data.map(x => `<div class="item">${x.product.name} | Batch ${x.batchNo} | Exp: ${new Date(x.expiryDate).toLocaleDateString()}</div>`).join('')
+        : '<div class="item">No near expiry items.</div>';
+    }
+
+    loadLowStock();
+    loadExpiry();
+  </script>
+</body>
+</html>

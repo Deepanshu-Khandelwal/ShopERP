@@ -1,0 +1,115 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Run Backend",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "ShopERP.Backend/ShopERP.Backend.csproj"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "isBackground": true,
+      "problemMatcher": {
+        "pattern": {
+          "regexp": "^.*$",
+          "file": 1,
+          "location": 2,
+          "message": 3
+        },
+        "background": {
+          "activeOnStart": true,
+          "beginsPattern": "^.*Now listening on:.*",
+          "endsPattern": "^.*Application started.*"
+        }
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": false,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Run Desktop",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "run",
+        "--project",
+        "ShopERP.Rebuild/ShopERP.Rebuild.Desktop/ShopERP.Rebuild.Desktop.csproj"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Watch Desktop",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "watch",
+        "--project",
+        "ShopERP.Rebuild/ShopERP.Rebuild.Desktop/ShopERP.Rebuild.Desktop.csproj",
+        "run"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared",
+        "showReuseMessage": true,
+        "clear": false
+      }
+    },
+    {
+      "label": "Build Solution",
+      "type": "shell",
+      "command": "dotnet",
+      "args": [
+        "build",
+        "ShopERP.Rebuild/ShopERP.Rebuild.sln"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "problemMatcher": "$msCompile"
+    },
+    {
+      "label": "Run Backend & Desktop",
+      "type": "shell",
+      "command": "Start-Process -NoNewWindow -FilePath 'dotnet' -ArgumentList 'run --project ShopERP.Backend/ShopERP.Backend.csproj'; Start-Sleep -Seconds 3; dotnet run --project ShopERP.Rebuild/ShopERP.Rebuild.Desktop/ShopERP.Rebuild.Desktop.csproj",
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "focus": true,
+        "panel": "shared"
+      }
+    }
+  ]
+}

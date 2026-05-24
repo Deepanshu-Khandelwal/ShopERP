@@ -1,0 +1,11 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": ".NET: ShopERP Desktop",
+      "type": "dotnet",
+      "request": "launch",
+      "projectPath": "${workspaceFolder}/ShopERP.Rebuild.Desktop/ShopERP.Rebuild.Desktop.csproj"
+    }
+  ]
+}

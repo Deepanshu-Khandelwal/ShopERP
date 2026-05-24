@@ -1,0 +1,115 @@
+<UserControl x:Class="ShopERP.Rebuild.Desktop.Views.Pages.Forms.PaymentsForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Margin="0,0,0,32">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <Button Content="← BACK" Style="{StaticResource ActionButtonStyle}" Width="90" Height="36" VerticalAlignment="Top"
+                        Command="{Binding DataContext.NavigateCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                        CommandParameter="PaymentsList" />
+                
+                <StackPanel Grid.Column="1" Margin="24,0,0,0">
+                    <TextBlock Text="Financial Settlement" Style="{StaticResource PageTitleStyle}" />
+                    <TextBlock Text="Record and verify clinical account settlements and credit clearing." Style="{StaticResource PageSubtitleStyle}" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Form Layout -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Main Fields -->
+            <Border Grid.Column="0" Style="{StaticResource ModernCard}" Margin="0,0,24,0">
+                <StackPanel>
+                    <TextBlock Text="Settlement Parameters" Style="{StaticResource SectionTitleStyle}" Margin="0,0,0,24" />
+                    
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="24" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Classification Type" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <ComboBox ItemsSource="{Binding PartyTypes}" SelectedItem="{Binding SelectedPartyType}" Margin="0,0,0,24" />
+
+                            <TextBlock Text="Select Entity (Party)" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <ComboBox ItemsSource="{Binding PartyOptions}" DisplayMemberPath="Name" SelectedValuePath="Id" SelectedValue="{Binding SelectedPartyId}" Margin="0,0,0,24" />
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Current Financial Status" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <Border Background="#10FFFFFF" CornerRadius="8" Padding="12" Margin="0,0,0,24">
+                                <StackPanel>
+                                    <TextBlock Text="Ledger Balance" FontSize="11" Foreground="{StaticResource BrushTextSecondary}" />
+                                    <TextBlock Text="{Binding CurrentBalance, StringFormat=INR {0:N2}}" FontSize="18" FontWeight="Bold" Foreground="White" />
+                                </StackPanel>
+                            </Border>
+
+                            <TextBlock Text="Settlement Date" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <DatePicker SelectedDate="{Binding PaymentDate}" Margin="0,0,0,24" />
+                        </StackPanel>
+                    </Grid>
+
+                    <TextBlock Text="Transaction Details" Style="{StaticResource SectionTitleStyle}" Margin="0,12,0,24" />
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="24" />
+                            <ColumnDefinition Width="1.5*" />
+                        </Grid.ColumnDefinitions>
+                        
+                        <StackPanel Grid.Column="0">
+                            <TextBlock Text="Settlement Amount" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <TextBox Text="{Binding Amount}" FontSize="18" FontWeight="Bold" Foreground="{StaticResource BrushPrimary}" />
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="2">
+                            <TextBlock Text="Audit Reference (Ref No)" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,0,0,8" />
+                            <TextBox Text="{Binding ReferenceNo}" />
+                        </StackPanel>
+                    </Grid>
+
+                    <TextBlock Text="Clinical Observation / Notes" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="24,12,0,8" />
+                    <TextBox Text="{Binding Notes}" Height="80" TextWrapping="Wrap" AcceptsReturn="True" VerticalContentAlignment="Top" />
+                </StackPanel>
+            </Border>
+
+            <!-- Sidebar -->
+            <StackPanel Grid.Column="1">
+                <Border Style="{StaticResource ModernCard}" Margin="0,0,0,24">
+                    <StackPanel>
+                        <TextBlock Text="Node Operations" Style="{StaticResource SectionTitleStyle}" Margin="0,0,0,20" />
+                        <Button Content="{Binding SaveActionLabel}" Style="{StaticResource PrimaryButtonStyle}" Height="54" Margin="0,0,0,12" Command="{Binding RecordPaymentCommand}" />
+                        <Button Content="DISCARD" Style="{StaticResource DeleteActionButtonStyle}" Height="40"
+                                Command="{Binding DataContext.NavigateCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                CommandParameter="PaymentsList" />
+                    </StackPanel>
+                </Border>
+                
+                <Border Style="{StaticResource ModernCard}" Background="#15F59E0B">
+                    <StackPanel>
+                        <TextBlock Text="Financial Audit" Foreground="White" FontWeight="Bold" Margin="0,0,0,8" />
+                        <TextBlock Text="Payments recorded here will immediately affect the entity's running ledger. Verification is finalized upon node commitment." Foreground="#FEF3C7" FontSize="12" TextWrapping="Wrap" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

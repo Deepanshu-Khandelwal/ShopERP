@@ -1,0 +1,122 @@
+<UserControl x:Class="ShopERP.Rebuild.Desktop.Views.Pages.Forms.PurchaseOrdersForm"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <!-- Header -->
+        <Border Margin="0,0,0,24">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                
+                <Button Content="← BACK" Style="{StaticResource ActionButtonStyle}" Width="90" Height="36" VerticalAlignment="Top"
+                        Command="{Binding DataContext.NavigateCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                        CommandParameter="OrdersList" />
+                
+                <StackPanel Grid.Column="1" Margin="24,0,0,0">
+                    <TextBlock Text="Medication Procurement Planning" Style="{StaticResource PageTitleStyle}" />
+                    <TextBlock Text="Establish purchase orders for pharmaceutical stock replenishment." Style="{StaticResource PageSubtitleStyle}" />
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!-- Workspace -->
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2.2*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <!-- Line Entry -->
+            <StackPanel Grid.Column="0" Margin="0,0,24,0">
+                <Border Style="{StaticResource ModernCard}" Margin="0,0,0,24">
+                    <StackPanel>
+                        <TextBlock Text="Order Configuration" Style="{StaticResource SectionTitleStyle}" Margin="0,0,0,20" />
+                        
+                        <Grid Margin="0,0,0,20">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="12" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="12" />
+                                <ColumnDefinition Width="*" />
+                                <ColumnDefinition Width="12" />
+                                <ColumnDefinition Width="Auto" />
+                            </Grid.ColumnDefinitions>
+                            
+                            <StackPanel Grid.Column="0">
+                                <TextBlock Text="Target Medication" Foreground="{StaticResource BrushTextMuted}" FontSize="11" Margin="0,0,0,6" />
+                                <ComboBox ItemsSource="{Binding Products}" DisplayMemberPath="Name" SelectedValuePath="Id" SelectedValue="{Binding SelectedProductId}" />
+                            </StackPanel>
+                            <StackPanel Grid.Column="2">
+                                <TextBlock Text="Target Qty" Foreground="{StaticResource BrushTextMuted}" FontSize="11" Margin="0,0,0,6" />
+                                <TextBox Text="{Binding LineQty}" />
+                            </StackPanel>
+                            <StackPanel Grid.Column="4">
+                                <TextBlock Text="Expected Rate" Foreground="{StaticResource BrushTextMuted}" FontSize="11" Margin="0,0,0,6" />
+                                <TextBox Text="{Binding LineRate}" />
+                            </StackPanel>
+                            
+                            <Button Grid.Column="6" Content="RESERVE LINE" Style="{StaticResource PrimaryButtonStyle}" Height="38" Padding="16,0" VerticalAlignment="Bottom" Command="{Binding AddLineCommand}" />
+                        </Grid>
+
+                        <DataGrid ItemsSource="{Binding Lines}" SelectedItem="{Binding SelectedLine}" Height="400" AutoGenerateColumns="False" CanUserAddRows="False">
+                            <DataGrid.Columns>
+                                <DataGridTextColumn Header="Medication Item" Binding="{Binding ProductName}" Width="2*" IsReadOnly="True" />
+                                <DataGridTextColumn Header="Quantity" Binding="{Binding Quantity}" Width="100" />
+                                <DataGridTextColumn Header="Est. Unit Rate" Binding="{Binding Rate}" Width="120" />
+                                <DataGridTemplateColumn Header="Line Estimated Total" Width="140">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <TextBlock Text="{Binding Amount, StringFormat=N2}" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Margin="0,0,10,0" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                                <DataGridTemplateColumn Width="50">
+                                    <DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <Button Content="✕" Style="{StaticResource DeleteActionButtonStyle}" Height="22" Width="22" Padding="0" Command="{Binding DataContext.RemoveLineCommand, RelativeSource={RelativeSource AncestorType=UserControl}}" />
+                                        </DataTemplate>
+                                    </DataGridTemplateColumn.CellTemplate>
+                                </DataGridTemplateColumn>
+                            </DataGrid.Columns>
+                        </DataGrid>
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+
+            <!-- Metadata Sidebar -->
+            <StackPanel Grid.Column="1">
+                <Border Style="{StaticResource ModernCard}" Margin="0,0,0,24">
+                    <StackPanel>
+                        <TextBlock Text="Order Registry" Style="{StaticResource SectionTitleStyle}" Margin="0,0,0,20" />
+                        
+                        <TextBlock Text="Order Reference ID" Foreground="{StaticResource BrushTextMuted}" FontSize="11" Margin="0,0,0,6" />
+                        <TextBox Text="{Binding OrderNo}" Margin="0,0,0,16" />
+
+                        <TextBlock Text="Supplier Node" Foreground="{StaticResource BrushTextMuted}" FontSize="11" Margin="0,0,0,6" />
+                        <ComboBox ItemsSource="{Binding Suppliers}" DisplayMemberPath="Name" SelectedValuePath="Id" SelectedValue="{Binding SelectedSupplierId}" Margin="0,0,0,24" />
+
+                        <Border Background="#150EA5E9" CornerRadius="12" Padding="16" Margin="0,12,0,20">
+                            <StackPanel>
+                                <TextBlock Text="ESTIMATED COMMITMENT" Foreground="{StaticResource BrushSecondary}" FontSize="10" FontWeight="Bold" />
+                                <TextBlock Text="{Binding Total, StringFormat=INR {0:N2}}" Foreground="White" FontSize="20" FontWeight="ExtraBold" />
+                            </StackPanel>
+                        </Border>
+
+                        <Button Content="{Binding SaveActionLabel}" Style="{StaticResource PrimaryButtonStyle}" Height="54" Margin="0,0,0,12" Command="{Binding CreateOrderCommand}" />
+                        <Button Content="VOID PLANNING" Style="{StaticResource DeleteActionButtonStyle}" Height="40"
+                                Command="{Binding DataContext.NavigateCommand, RelativeSource={RelativeSource AncestorType=Window}}"
+                                CommandParameter="OrdersList" />
+                    </StackPanel>
+                </Border>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</UserControl>

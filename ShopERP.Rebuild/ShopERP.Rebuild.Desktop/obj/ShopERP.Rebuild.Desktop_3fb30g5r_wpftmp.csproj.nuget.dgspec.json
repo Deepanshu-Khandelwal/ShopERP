@@ -1,0 +1,348 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj",
+        "projectName": "ShopERP.Backend",
+        "projectPath": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj",
+        "packagesPath": "C:\\Users\\asusw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Backend\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\asusw\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Azure.Storage.Blobs": {
+              "target": "Package",
+              "version": "[12.27.0, )"
+            },
+            "CsvHelper": {
+              "target": "Package",
+              "version": "[33.1.0, )"
+            },
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.23, )"
+            },
+            "Hangfire.MemoryStorage": {
+              "target": "Package",
+              "version": "[1.8.1.2, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "QuestPDF": {
+              "target": "Package",
+              "version": "[2026.2.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj",
+        "projectName": "ShopERP.Rebuild.Core",
+        "projectPath": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj",
+        "packagesPath": "C:\\Users\\asusw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\asusw\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj",
+        "projectName": "ShopERP.Rebuild.Desktop",
+        "projectPath": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj",
+        "packagesPath": "C:\\Users\\asusw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\asusw\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0-windows7.0": {
+            "targetAlias": "net9.0-windows",
+            "projectReferences": {
+              "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj": {
+                "projectPath": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj"
+              },
+              "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj": {
+                "projectPath": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj"
+              },
+              "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0-windows7.0": {
+          "targetAlias": "net9.0-windows",
+          "dependencies": {
+            "CommunityToolkit.Mvvm": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj",
+        "projectName": "ShopERP.Rebuild.Infrastructure",
+        "projectPath": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\asusw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\asusw\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net9.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net9.0": {
+            "targetAlias": "net9.0",
+            "projectReferences": {
+              "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj": {
+                "projectPath": "C:\\Users\\asusw\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.300"
+      },
+      "frameworks": {
+        "net9.0": {
+          "targetAlias": "net9.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Microsoft.Extensions.Options.ConfigurationExtensions": {
+              "target": "Package",
+              "version": "[9.0.13, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[9.0.0-preview.3.efcore.9.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.311/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
