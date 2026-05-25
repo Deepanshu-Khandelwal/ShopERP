@@ -7,17 +7,14 @@
         Width="1100"
         WindowStartupLocation="CenterScreen"
         Background="{StaticResource WindowBackground}"
-        AllowsTransparency="True"
-        WindowStyle="None">
+        AllowsTransparency="False"
+        WindowStyle="SingleBorderWindow">
+        
 
     <Window.Resources>
         <local:StringToVisibilityConverter x:Key="StringToVisibilityConverter" />
         <local:InverseBoolConverter x:Key="InverseBoolConverter" />
     </Window.Resources>
-
-    <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="40" GlassFrameThickness="0" CornerRadius="20" />
-    </WindowChrome.WindowChrome>
 
     <Border BorderBrush="{StaticResource GlassBorder}" BorderThickness="1" CornerRadius="20">
         <Grid>
@@ -35,18 +32,18 @@
                     </Canvas>
                     
                     <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Margin="60">
-                        <Border Width="80" Height="80" CornerRadius="24" Background="#30FFFFFF" HorizontalAlignment="Left" Margin="0,0,0=">
-                             <TextBlock Text="Rx" Foreground="White" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                            <Border Width="80" Height="80" CornerRadius="24" Background="#33FFFFFF" HorizontalAlignment="Left" Margin="0,0,0,32">
+                                <TextBlock Text="Rx" Foreground="{StaticResource BrushOnAccent}" FontSize="36" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Border>
-                        <TextBlock Text="JOIN MEDICORE" Foreground="White" FontSize="40" FontWeight="ExtraBold" Margin="0,32,0,8" />
-                        <TextBlock Text="Secure Medical Infrastructure Node" Foreground="White" FontSize="16" FontWeight="Medium" Opacity="0.8" Margin="0,0,0,40" />
+                            <TextBlock Text="JOIN MEDICORE" Foreground="{StaticResource BrushOnAccent}" FontSize="40" FontWeight="ExtraBold" Margin="0,32,0,8" />
+                            <TextBlock Text="Secure Medical Infrastructure Node" Foreground="{StaticResource BrushOnAccent}" FontSize="16" FontWeight="Medium" Opacity="0.8" Margin="0,0,0,40" />
                         
                         <Border Background="#20FFFFFF" CornerRadius="16" Padding="20">
                             <StackPanel>
-                                <TextBlock Text="Protocol Requirements:" Foreground="White" FontWeight="Bold" Margin="0,0,0,12" />
-                                <TextBlock Text="• Valid Clinical ID Required" Foreground="White" FontSize="13" Margin="0,4"/>
-                                <TextBlock Text="• Cryptographic Password Standards" Foreground="White" FontSize="13" Margin="0,4"/>
-                                <TextBlock Text="• Node Encryption Enabled" Foreground="White" FontSize="13" Margin="0,4"/>
+                                <TextBlock Text="Protocol Requirements:" Foreground="{StaticResource BrushOnAccent}" FontWeight="Bold" Margin="0,0,0,12" />
+                                <TextBlock Text="• Valid Clinical ID Required" Foreground="{StaticResource BrushOnAccent}" FontSize="13" Margin="0,4"/>
+                                <TextBlock Text="• Cryptographic Password Standards" Foreground="{StaticResource BrushOnAccent}" FontSize="13" Margin="0,4"/>
+                                <TextBlock Text="• Node Encryption Enabled" Foreground="{StaticResource BrushOnAccent}" FontSize="13" Margin="0,4"/>
                             </StackPanel>
                         </Border>
                     </StackPanel>
@@ -58,7 +55,7 @@
                 <ScrollViewer VerticalScrollBarVisibility="Auto">
                     <StackPanel VerticalAlignment="Center">
                         <TextBlock Text="REQUEST ACCESS" Foreground="{StaticResource BrushPrimary}" FontSize="12" FontWeight="Bold" Margin="0,0,0,8" />
-                        <TextBlock Text="Create Credentials" Foreground="White" FontSize="28" FontWeight="Bold" Margin="0,0,0,24" />
+                        <TextBlock Text="Create Credentials" Foreground="{StaticResource BrushTextPrimary}" FontSize="28" FontWeight="Bold" Margin="0,0,0,24" />
 
                         <!-- SUCCESS -->
                         <Border Background="#1510B981" CornerRadius="8" Padding="12" Margin="0,0,0,20" 
@@ -101,7 +98,7 @@
             </Border>
             
             <!-- Close Button -->
-            <Button Content="✕" Width="40" Height="40" Background="Transparent" Foreground="White" 
+            <Button Content="✕" Width="40" Height="40" Background="Transparent" Foreground="{StaticResource BrushTextPrimary}" 
                     HorizontalAlignment="Right" VerticalAlignment="Top" Margin="10" Click="OnCloseClick">
                 <Button.Style>
                     <Style TargetType="Button">

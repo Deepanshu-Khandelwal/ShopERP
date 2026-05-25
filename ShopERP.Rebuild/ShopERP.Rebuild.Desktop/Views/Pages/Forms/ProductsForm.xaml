@@ -111,7 +111,7 @@
 
                 <Border Style="{StaticResource ModernCard}" Background="#0AFFFFFF">
                     <StackPanel>
-                        <TextBlock Text="Safety Notice" Foreground="White" FontWeight="Bold" Margin="0,0,0,8" />
+                        <TextBlock Text="Safety Notice" Foreground="{StaticResource BrushTextPrimary}" FontWeight="Bold" Margin="0,0,0,8" />
                         <TextBlock Text="Ensure 'Expiration Date' matches the physically verified batch. Incorrect registry can lead to dispensing audits." Foreground="{StaticResource BrushTextSecondary}" FontSize="12" TextWrapping="Wrap" />
                     </StackPanel>
                 </Border>

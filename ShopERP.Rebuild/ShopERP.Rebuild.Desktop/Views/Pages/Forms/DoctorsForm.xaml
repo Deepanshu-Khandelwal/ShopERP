@@ -97,7 +97,7 @@
                 
                 <Border Style="{StaticResource ModernCard}" Background="#0AFFFFFF">
                     <StackPanel>
-                        <TextBlock Text="Clinical Authority" Foreground="White" FontWeight="Bold" Margin="0,0,0,8" />
+                        <TextBlock Text="Clinical Authority" Foreground="{StaticResource BrushTextPrimary}" FontWeight="Bold" Margin="0,0,0,8" />
                         <TextBlock Text="Practitioners registered here will be authorized to prescribe medications within the MediCore ecosystem." Foreground="{StaticResource BrushTextSecondary}" FontSize="12" TextWrapping="Wrap" />
                     </StackPanel>
                 </Border>

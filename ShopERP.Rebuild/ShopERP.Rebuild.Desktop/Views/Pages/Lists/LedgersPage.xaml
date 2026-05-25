@@ -60,7 +60,7 @@
                         <DataGridTemplateColumn Header="Running Balance" Width="*">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="{Binding Balance, StringFormat=N2}" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Margin="0,0,20,0" />
+                                    <TextBlock Text="{Binding Balance, StringFormat=N2}" FontWeight="Bold" Foreground="{StaticResource BrushTextPrimary}" HorizontalAlignment="Right" Margin="0,0,20,0" />
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>
@@ -75,7 +75,7 @@
                         </StackPanel>
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right">
                             <TextBlock Text="Final Settlement: " Foreground="{StaticResource BrushTextSecondary}" VerticalAlignment="Center" />
-                            <TextBlock Text="{Binding TotalBalance, StringFormat=INR {0:N2}}" Foreground="White" FontWeight="Bold" FontSize="16" Margin="10,0,0,0" VerticalAlignment="Center" />
+                            <TextBlock Text="{Binding TotalBalance, StringFormat=INR {0:N2}}" Foreground="{StaticResource BrushTextPrimary}" FontWeight="Bold" FontSize="16" Margin="10,0,0,0" VerticalAlignment="Center" />
                         </StackPanel>
                     </Grid>
                 </Border>

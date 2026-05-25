@@ -82,7 +82,7 @@
                 
                 <Border Style="{StaticResource ModernCard}" Background="#0AFFFFFF">
                     <StackPanel>
-                        <TextBlock Text="Privacy Compliance" Foreground="White" FontWeight="Bold" Margin="0,0,0,8" />
+                        <TextBlock Text="Privacy Compliance" Foreground="{StaticResource BrushTextPrimary}" FontWeight="Bold" Margin="0,0,0,8" />
                         <TextBlock Text="Patient data is encrypted end-to-end. Ensure contact details are accurate for medication alerts." Foreground="{StaticResource BrushTextSecondary}" FontSize="12" TextWrapping="Wrap" />
                     </StackPanel>
                 </Border>

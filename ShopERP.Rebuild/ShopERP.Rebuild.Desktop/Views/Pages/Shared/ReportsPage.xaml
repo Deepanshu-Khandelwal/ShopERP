@@ -35,7 +35,7 @@
                     <Border Style="{StaticResource ModernCard}" Margin="0,0,16,0">
                         <StackPanel>
                             <TextBlock Text="Net Pharmaceutical Sales" FontSize="12" Foreground="{StaticResource BrushTextSecondary}" Margin="0,0,0,8" />
-                            <TextBlock Text="{Binding TotalSales, StringFormat=INR {0:N2}}" FontSize="24" FontWeight="Bold" Foreground="White" />
+                            <TextBlock Text="{Binding TotalSales, StringFormat=INR {0:N2}}" FontSize="24" FontWeight="Bold" Foreground="{StaticResource BrushTextPrimary}" />
                         </StackPanel>
                     </Border>
                     <Border Style="{StaticResource ModernCard}" Margin="0,0,16,0">

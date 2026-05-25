@@ -212,8 +212,22 @@ public partial class App : Application
 		payload.AppendLine(ex.ToString());
 		payload.AppendLine(new string('-', 100));
 
+		// Write to local appdata logs
 		File.AppendAllText(logPath, payload.ToString());
-		return logPath;
+
+		// Also mirror logs to workspace Documents/ShopERP/logs for easier access
+		try
+		{
+			var workspaceLogs = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "ShopERP", "logs");
+			Directory.CreateDirectory(workspaceLogs);
+			var workspaceLogPath = Path.Combine(workspaceLogs, "app-errors.log");
+			File.AppendAllText(workspaceLogPath, payload.ToString());
+			return workspaceLogPath;
+		}
+		catch
+		{
+			return logPath;
+		}
 	}
 
 	private static async Task EnsureBackendSchemaReadyAsync(BackendDbContext db)

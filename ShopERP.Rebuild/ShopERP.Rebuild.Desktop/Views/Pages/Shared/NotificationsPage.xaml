@@ -40,7 +40,7 @@
                                         </Border>
 
                                         <StackPanel Grid.Column="1" Margin="20,0">
-                                            <TextBlock Text="{Binding Title}" Foreground="White" FontSize="16" FontWeight="SemiBold" />
+                                            <TextBlock Text="{Binding Title}" Foreground="{StaticResource BrushTextPrimary}" FontSize="16" FontWeight="SemiBold" />
                                             <TextBlock Text="{Binding Message}" Foreground="{StaticResource BrushTextSecondary}" FontSize="13" Margin="0,4,0,0" TextWrapping="Wrap" />
                                             <TextBlock Text="{Binding CreatedAt, StringFormat=Timestamp: {0:dd MMM yyyy HH:mm}}" Foreground="{StaticResource BrushTextMuted}" FontSize="10" Margin="0,8,0,0" />
                                         </StackPanel>

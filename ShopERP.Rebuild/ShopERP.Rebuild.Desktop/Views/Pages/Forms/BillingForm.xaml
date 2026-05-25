@@ -104,7 +104,7 @@
                                 <DataGridTemplateColumn Header="Total" Width="100">
                                     <DataGridTemplateColumn.CellTemplate>
                                         <DataTemplate>
-                                            <TextBlock Text="{Binding Amount, StringFormat=N2}" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Margin="0,0,10,0" />
+                                            <TextBlock Text="{Binding Amount, StringFormat=N2}" FontWeight="Bold" Foreground="{StaticResource BrushTextPrimary}" HorizontalAlignment="Right" Margin="0,0,10,0" />
                                         </DataTemplate>
                                     </DataGridTemplateColumn.CellTemplate>
                                 </DataGridTemplateColumn>
@@ -160,22 +160,22 @@
                             
                             <Grid Margin="0,0,0,12">
                                 <TextBlock Text="Taxable Value" Foreground="{StaticResource BrushTextMuted}" />
-                                <TextBlock Text="{Binding TaxableAmount, StringFormat=INR {0:N2}}" Foreground="White" HorizontalAlignment="Right" />
+                                <TextBlock Text="{Binding TaxableAmount, StringFormat=INR {0:N2}}" Foreground="{StaticResource BrushTextPrimary}" HorizontalAlignment="Right" />
                             </Grid>
                             <Border Height="1" Background="White" Opacity="0.1" Margin="0,4" />
                             <Grid Margin="0,0,0,12">
                                 <TextBlock Text="Central Tax (CGST)" Foreground="{StaticResource BrushTextMuted}" />
-                                <TextBlock Text="{Binding CgstAmount, StringFormat=INR {0:N2}}" Foreground="White" HorizontalAlignment="Right" />
+                                <TextBlock Text="{Binding CgstAmount, StringFormat=INR {0:N2}}" Foreground="{StaticResource BrushTextPrimary}" HorizontalAlignment="Right" />
                             </Grid>
                             <Grid Margin="0,0,0,12">
                                 <TextBlock Text="State Tax (SGST)" Foreground="{StaticResource BrushTextMuted}" />
-                                <TextBlock Text="{Binding SgstAmount, StringFormat=INR {0:N2}}" Foreground="White" HorizontalAlignment="Right" />
+                                <TextBlock Text="{Binding SgstAmount, StringFormat=INR {0:N2}}" Foreground="{StaticResource BrushTextPrimary}" HorizontalAlignment="Right" />
                             </Grid>
 
                             <Border Background="{StaticResource AccentGradient}" CornerRadius="12" Padding="20" Margin="0,12,0,0">
                                 <StackPanel>
-                                    <TextBlock Text="GRAND TOTAL" Foreground="White" FontSize="11" FontWeight="Bold" Opacity="0.8" />
-                                    <TextBlock Text="{Binding EstimatedGrandTotal, StringFormat=INR {0:N2}}" Foreground="White" FontSize="26" FontWeight="ExtraBold" />
+                                    <TextBlock Text="GRAND TOTAL" Foreground="{StaticResource BrushTextSecondary}" FontSize="11" FontWeight="Bold" Opacity="0.8" />
+                                    <TextBlock Text="{Binding EstimatedGrandTotal, StringFormat=INR {0:N2}}" Foreground="{StaticResource BrushTextPrimary}" FontSize="26" FontWeight="ExtraBold" />
                                 </StackPanel>
                             </Border>
 

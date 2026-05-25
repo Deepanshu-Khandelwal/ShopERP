@@ -63,7 +63,7 @@
                         <DataGridTemplateColumn Header="Est. Amount" Width="*">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="{Binding TotalAmount, StringFormat=INR {0:N2}}" FontWeight="Bold" Foreground="White" />
+                                    <TextBlock Text="{Binding TotalAmount, StringFormat=INR {0:N2}}" FontWeight="Bold" Foreground="{StaticResource BrushTextPrimary}" />
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>

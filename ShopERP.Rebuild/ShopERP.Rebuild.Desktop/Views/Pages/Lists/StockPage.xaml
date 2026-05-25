@@ -59,7 +59,7 @@
                         <DataGridTemplateColumn Header="Current Level" Width="*">
                             <DataGridTemplateColumn.CellTemplate>
                                 <DataTemplate>
-                                    <TextBlock Text="{Binding StockQty}" FontWeight="Bold" Foreground="White" />
+                                    <TextBlock Text="{Binding StockQty}" FontWeight="Bold" Foreground="{StaticResource BrushTextPrimary}" />
                                 </DataTemplate>
                             </DataGridTemplateColumn.CellTemplate>
                         </DataGridTemplateColumn>

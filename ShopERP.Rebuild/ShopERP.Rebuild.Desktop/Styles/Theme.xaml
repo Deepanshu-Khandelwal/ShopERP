@@ -4,63 +4,39 @@
 
     <!-- MEDICORE PREMIUM DESIGN SYSTEM -->
     
-    <!-- Color Palette (Light Theme) -->
-    <Color x:Key="ColorPrimary">#0F766E</Color> <!-- Teal / Primary -->
-    <Color x:Key="ColorPrimaryDark">#0b5e57</Color>
-    <Color x:Key="ColorPrimaryLight">#34d399</Color>
+    <!-- System-light brushes for maximum compatibility -->
+    <SolidColorBrush x:Key="BrushPrimary" Color="{x:Static SystemColors.HighlightColor}" />
+    <SolidColorBrush x:Key="BrushPrimaryDark" Color="{x:Static SystemColors.HotTrackColor}" />
+    <SolidColorBrush x:Key="BrushSecondary" Color="{x:Static SystemColors.HighlightColor}" />
+    <SolidColorBrush x:Key="BrushTextPrimary" Color="{x:Static SystemColors.WindowTextColor}" />
+    <SolidColorBrush x:Key="BrushTextSecondary" Color="{x:Static SystemColors.ControlDarkColor}" />
+    <SolidColorBrush x:Key="BrushTextMuted" Color="{x:Static SystemColors.GrayTextColor}" />
+    <SolidColorBrush x:Key="BrushDanger" Color="#EF4444" />
+    <SolidColorBrush x:Key="BrushWarning" Color="#F59E0B" />
+    <SolidColorBrush x:Key="BrushSuccess" Color="#10B981" />
+    <SolidColorBrush x:Key="BrushInfo" Color="{x:Static SystemColors.HighlightColor}" />
 
-    <Color x:Key="ColorSecondary">#0EA5E9</Color>
-    <Color x:Key="ColorSecondaryDark">#0284C7</Color>
+    <!-- Brush for text placed on brand/accent surfaces (white-on-accent) -->
+    <SolidColorBrush x:Key="BrushOnAccent" Color="White" />
 
-    <Color x:Key="ColorBgDeep">#F8FAFC</Color> <!-- very light background -->
-    <Color x:Key="ColorBgSurface">#FFFFFF</Color> <!-- surface/panels -->
-    <Color x:Key="ColorBgSurfaceElevated">#F1F5F9</Color> <!-- elevated surface -->
+    <SolidColorBrush x:Key="AccentGradient" Color="{x:Static SystemColors.HighlightColor}" />
+    <SolidColorBrush x:Key="GlassBorder" Color="{x:Static SystemColors.ControlLightColor}" />
 
-    <Color x:Key="ColorTextPrimary">#0F172A</Color> <!-- dark text -->
-    <Color x:Key="ColorTextSecondary">#475569</Color>
-    <Color x:Key="ColorTextMuted">#64748B</Color>
-    
-    <Color x:Key="ColorDanger">#EF4444</Color>
-    <Color x:Key="ColorWarning">#F59E0B</Color>
-    <Color x:Key="ColorSuccess">#10B981</Color>
+    <SolidColorBrush x:Key="WindowBackground" Color="{x:Static SystemColors.WindowColor}" />
+    <SolidColorBrush x:Key="BrushSurface" Color="{x:Static SystemColors.WindowColor}" />
+    <SolidColorBrush x:Key="BrushSurfaceAlt" Color="{x:Static SystemColors.ControlLightLightColor}" />
+    <SolidColorBrush x:Key="BrushSurfaceSoft" Color="{x:Static SystemColors.ControlLightLightColor}" />
+    <SolidColorBrush x:Key="BrushBorder" Color="{x:Static SystemColors.ControlLightColor}" />
+    <SolidColorBrush x:Key="BrushBorderSoft" Color="{x:Static SystemColors.ControlLightColor}" />
+    <SolidColorBrush x:Key="BrushSurfaceElevated" Color="{x:Static SystemColors.ControlLightLightColor}" />
 
-    <!-- Brushes -->
-    <SolidColorBrush x:Key="BrushPrimary" Color="{StaticResource ColorPrimary}" />
-    <SolidColorBrush x:Key="BrushPrimaryDark" Color="{StaticResource ColorPrimaryDark}" />
-    <SolidColorBrush x:Key="BrushSecondary" Color="{StaticResource ColorSecondary}" />
-    <SolidColorBrush x:Key="BrushTextPrimary" Color="{StaticResource ColorTextPrimary}" />
-    <SolidColorBrush x:Key="BrushTextSecondary" Color="{StaticResource ColorTextSecondary}" />
-    <SolidColorBrush x:Key="BrushTextMuted" Color="{StaticResource ColorTextMuted}" />
-    <SolidColorBrush x:Key="BrushDanger" Color="{StaticResource ColorDanger}" />
-    <SolidColorBrush x:Key="BrushWarning" Color="{StaticResource ColorWarning}" />
-    <SolidColorBrush x:Key="BrushSuccess" Color="{StaticResource ColorSuccess}" />
-    <SolidColorBrush x:Key="BrushInfo" Color="{StaticResource ColorSecondary}" />
-    
-    <LinearGradientBrush x:Key="AccentGradient" StartPoint="0,0" EndPoint="1,1">
-        <GradientStop Color="#10B981" Offset="0" />
-        <GradientStop Color="#06B6D4" Offset="1" />
-    </LinearGradientBrush>
-
-    <LinearGradientBrush x:Key="GlassBorder" StartPoint="0,0" EndPoint="1,1">
-        <GradientStop Color="#40FFFFFF" Offset="0" />
-        <GradientStop Color="#10FFFFFF" Offset="1" />
-    </LinearGradientBrush>
-
-    <SolidColorBrush x:Key="WindowBackground" Color="{StaticResource ColorBgDeep}" />
-    <SolidColorBrush x:Key="BrushSurface" Color="{StaticResource ColorBgSurface}" />
-    <SolidColorBrush x:Key="BrushSurfaceAlt" Color="{StaticResource ColorBgSurfaceElevated}" />
-    <SolidColorBrush x:Key="BrushSurfaceSoft" Color="#F8F9FB" />
-    <SolidColorBrush x:Key="BrushBorder" Color="#E2E8F0" />
-    <SolidColorBrush x:Key="BrushBorderSoft" Color="#F1F5F9" />
-    <SolidColorBrush x:Key="BrushSurfaceElevated" Color="{StaticResource ColorBgSurfaceElevated}" />
-    
     <!-- Sidebar / Nav Brushes -->
-    <SolidColorBrush x:Key="BrushNavSurface" Color="{StaticResource ColorBgSurface}" />
-    <SolidColorBrush x:Key="BrushNavBorder" Color="{StaticResource BrushBorder}" />
-    <SolidColorBrush x:Key="BrushNavActive" Color="#10B981" Opacity="0.12" />
-    <SolidColorBrush x:Key="BrushNavSurfaceElevated" Color="{StaticResource ColorBgSurfaceElevated}" />
-    <SolidColorBrush x:Key="BrushTopNavText" Color="{StaticResource ColorTextPrimary}" />
-    <SolidColorBrush x:Key="BrushShellTextSubtle" Color="{StaticResource ColorTextSecondary}" />
+    <SolidColorBrush x:Key="BrushNavSurface" Color="{x:Static SystemColors.WindowColor}" />
+    <SolidColorBrush x:Key="BrushNavBorder" Color="{x:Static SystemColors.ControlLightColor}" />
+    <SolidColorBrush x:Key="BrushNavActive" Color="{x:Static SystemColors.HighlightColor}" Opacity="0.12" />
+    <SolidColorBrush x:Key="BrushNavSurfaceElevated" Color="{x:Static SystemColors.ControlLightLightColor}" />
+    <SolidColorBrush x:Key="BrushTopNavText" Color="{x:Static SystemColors.WindowTextColor}" />
+    <SolidColorBrush x:Key="BrushShellTextSubtle" Color="{x:Static SystemColors.ControlDarkColor}" />
 
     <!-- Control Styles -->
     <Style TargetType="Window">
@@ -244,18 +220,18 @@
     <!-- Cards & Shelves -->
     <Style x:Key="ModernCard" TargetType="Border">
         <Setter Property="Background" Value="{StaticResource BrushSurface}" />
-        <Setter Property="CornerRadius" Value="16" />
+        <Setter Property="CornerRadius" Value="18" />
         <Setter Property="BorderBrush" Value="{StaticResource GlassBorder}" />
         <Setter Property="BorderThickness" Value="1" />
-        <Setter Property="Padding" Value="20" />
+        <Setter Property="Padding" Value="18" />
     </Style>
 
     <Style x:Key="ShellContentStyle" TargetType="Border">
         <Setter Property="Background" Value="{StaticResource BrushSurface}" />
-        <Setter Property="CornerRadius" Value="24" />
+        <Setter Property="CornerRadius" Value="20" />
         <Setter Property="Effect">
             <Setter.Value>
-                <DropShadowEffect BlurRadius="40" ShadowDepth="4" Opacity="0.3" Color="Black" />
+                <DropShadowEffect BlurRadius="24" ShadowDepth="3" Opacity="0.14" Color="Black" />
             </Setter.Value>
         </Setter>
     </Style>
@@ -266,7 +242,7 @@
     <Style x:Key="PageTitleStyle" TargetType="TextBlock">
         <Setter Property="FontSize" Value="28" />
         <Setter Property="FontWeight" Value="Bold" />
-        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Foreground" Value="{StaticResource BrushTextPrimary}" />
         <Setter Property="Margin" Value="0,0,0,8" />
     </Style>
 
@@ -279,7 +255,7 @@
     <Style x:Key="SectionTitleStyle" TargetType="TextBlock">
         <Setter Property="FontSize" Value="18" />
         <Setter Property="FontWeight" Value="SemiBold" />
-        <Setter Property="Foreground" Value="White" />
+        <Setter Property="Foreground" Value="{StaticResource BrushTextPrimary}" />
         <Setter Property="Margin" Value="0,20,0,12" />
     </Style>
 
@@ -349,7 +325,7 @@
     </Style>
     
     <!-- Status Brushes -->
-    <SolidColorBrush x:Key="BrushShellHeader" Color="#1E293B" />
-    <SolidColorBrush x:Key="BrushShellHeaderBorder" Color="#334155" />
+    <SolidColorBrush x:Key="BrushShellHeader" Color="{StaticResource ColorShellHeader}" />
+    <SolidColorBrush x:Key="BrushShellHeaderBorder" Color="{StaticResource ColorShellHeaderBorder}" />
 
 </ResourceDictionary>

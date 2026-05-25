@@ -58,7 +58,7 @@
                             <Border Background="#10FFFFFF" CornerRadius="8" Padding="12" Margin="0,0,0,24">
                                 <StackPanel>
                                     <TextBlock Text="Ledger Balance" FontSize="11" Foreground="{StaticResource BrushTextSecondary}" />
-                                    <TextBlock Text="{Binding CurrentBalance, StringFormat=INR {0:N2}}" FontSize="18" FontWeight="Bold" Foreground="White" />
+                                    <TextBlock Text="{Binding CurrentBalance, StringFormat=INR {0:N2}}" FontSize="18" FontWeight="Bold" Foreground="{StaticResource BrushTextPrimary}" />
                                 </StackPanel>
                             </Border>
 
@@ -105,7 +105,7 @@
                 
                 <Border Style="{StaticResource ModernCard}" Background="#15F59E0B">
                     <StackPanel>
-                        <TextBlock Text="Financial Audit" Foreground="White" FontWeight="Bold" Margin="0,0,0,8" />
+                        <TextBlock Text="Financial Audit" Foreground="{StaticResource BrushTextPrimary}" FontWeight="Bold" Margin="0,0,0,8" />
                         <TextBlock Text="Payments recorded here will immediately affect the entity's running ledger. Verification is finalized upon node commitment." Foreground="#FEF3C7" FontSize="12" TextWrapping="Wrap" />
                     </StackPanel>
                 </Border>

@@ -10,13 +10,9 @@
         MinWidth="1100"
         MinHeight="750"
         WindowStartupLocation="CenterScreen"
-        Background="Transparent"
-        AllowsTransparency="True"
-        WindowStyle="None">
-    
-    <WindowChrome.WindowChrome>
-        <WindowChrome CaptionHeight="40" GlassFrameThickness="0" CornerRadius="16" />
-    </WindowChrome.WindowChrome>
+        Background="{StaticResource WindowBackground}"
+        AllowsTransparency="False"
+        WindowStyle="SingleBorderWindow">
 
     <Border Background="{StaticResource WindowBackground}" CornerRadius="16" BorderBrush="{StaticResource GlassBorder}" BorderThickness="1">
         <Grid>
@@ -35,12 +31,12 @@
                     </Grid.RowDefinitions>
 
                     <!-- Branding -->
-                    <StackPanel Grid.Row="0" Margin="24,32,24,32" VerticalAlignment="Center">
-                        <Border Width="48" Height="48" CornerRadius="14" Background="{StaticResource AccentGradient}" HorizontalAlignment="Left" Margin="0,0,0,16">
-                            <TextBlock Text="Rx" Foreground="White" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
+                    <StackPanel Grid.Row="0" Margin="24,32,24,28" VerticalAlignment="Center">
+                        <Border Width="48" Height="48" CornerRadius="14" Background="{StaticResource BrushPrimary}" HorizontalAlignment="Left" Margin="0,0,0,16">
+                            <TextBlock Text="Rx" Foreground="{StaticResource BrushOnAccent}" FontSize="22" FontWeight="Bold" HorizontalAlignment="Center" VerticalAlignment="Center" />
                         </Border>
-                        <TextBlock Text="MediCore ERP" Foreground="White" FontSize="20" FontWeight="Bold" />
-                        <TextBlock Text="Nexus OS // V2.0" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,4,0,0" />
+                        <TextBlock Text="MediCore ERP" Foreground="{StaticResource BrushTextPrimary}" FontSize="20" FontWeight="Bold" />
+                        <TextBlock Text="Medical operations made simple" Foreground="{StaticResource BrushTextMuted}" FontSize="12" Margin="0,4,0,0" />
                     </StackPanel>
 
                     <!-- Navigation -->
@@ -68,7 +64,7 @@
                     </ScrollViewer>
 
                     <!-- User Info & Logout -->
-                    <Border Grid.Row="2" Background="#0AFFFFFF" CornerRadius="0,0,0,16" Padding="20">
+                    <Border Grid.Row="2" Background="{StaticResource BrushSurfaceElevated}" CornerRadius="0,0,0,16" Padding="20">
                         <StackPanel>
                             <Grid Margin="0,0,0,16">
                                 <Grid.ColumnDefinitions>
@@ -76,10 +72,10 @@
                                     <ColumnDefinition Width="*" />
                                 </Grid.ColumnDefinitions>
                                 <Border Width="40" Height="40" CornerRadius="20" Background="{StaticResource BrushSurfaceElevated}" Grid.Column="0">
-                                    <TextBlock Text="A" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
+                                    <TextBlock Text="A" Foreground="{StaticResource BrushTextPrimary}" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" />
                                 </Border>
                                 <StackPanel Grid.Column="1" Margin="12,0,0,0">
-                                    <TextBlock Text="{Binding UserBadge}" Foreground="White" FontSize="13" FontWeight="SemiBold" />
+                                    <TextBlock Text="{Binding UserBadge}" Foreground="{StaticResource BrushTextPrimary}" FontSize="13" FontWeight="SemiBold" />
                                     <TextBlock Text="System Administrator" Foreground="{StaticResource BrushTextMuted}" FontSize="11" />
                                 </StackPanel>
                             </Grid>
@@ -100,15 +96,15 @@
                 <Border Grid.Row="0" Margin="24,16,24,0">
                     <Grid>
                         <StackPanel VerticalAlignment="Center">
-                            <TextBlock Text="{Binding CurrentPage.Title}" FontSize="24" FontWeight="Bold" Foreground="White" />
+                            <TextBlock Text="{Binding CurrentPage.Title}" FontSize="24" FontWeight="Bold" Foreground="{StaticResource BrushTextPrimary}" />
                             <TextBlock Text="MediCore System Workspace" Foreground="{StaticResource BrushTextSecondary}" FontSize="13" Margin="0,2,0,0" />
                         </StackPanel>
 
                         <!-- Dynamic Status -->
                         <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
-                            <Border Background="#10FFFFFF" CornerRadius="10" Padding="12,8" BorderBrush="{StaticResource GlassBorder}" BorderThickness="1" Margin="0,0,12,0">
+                            <Border Background="{StaticResource BrushSurface}" CornerRadius="10" Padding="12,8" BorderBrush="{StaticResource GlassBorder}" BorderThickness="1" Margin="0,0,12,0">
                                 <StackPanel Orientation="Horizontal">
-                                    <Ellipse Width="8" Height="8" Fill="#10B981" Margin="0,0,8,1" VerticalAlignment="Center" />
+                                    <Ellipse Width="8" Height="8" Fill="{StaticResource BrushSuccess}" Margin="0,0,8,1" VerticalAlignment="Center" />
                                     <TextBlock Text="{Binding SyncStatus}" Foreground="{StaticResource BrushTextSecondary}" FontSize="12" VerticalAlignment="Center" />
                                 </StackPanel>
                             </Border>
@@ -120,7 +116,7 @@
                 <!-- Page Content -->
                 <Border Grid.Row="1" Style="{StaticResource ShellContentStyle}" Margin="24" Padding="0">
                     <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled">
-                        <ContentControl Content="{Binding CurrentPage}" Padding="32" />
+                        <ContentControl Content="{Binding CurrentPage}" Padding="28" />
                     </ScrollViewer>
                 </Border>
             </Grid>
