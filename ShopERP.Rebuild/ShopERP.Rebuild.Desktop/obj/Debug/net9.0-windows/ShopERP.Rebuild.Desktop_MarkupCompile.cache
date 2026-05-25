@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Desktop\obj\Debug\net9.0-windows\
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Desktop\obj\Debug\net9.0-windows\
 ShopERP.Rebuild.Desktop
 none
 false
 TRACE;DEBUG;NET;NET9_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
-C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Desktop\App.xaml
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Desktop\App.xaml
 28407277823
 
 741281166583
-371-2145014133
+371-358432831
 LoginWindow.xaml;MainWindow.xaml;RegistrationWindow.xaml;Styles\Theme.xaml;Views\Pages\Forms\BillingForm.xaml;Views\Pages\Forms\CustomersForm.xaml;Views\Pages\Forms\DoctorsForm.xaml;Views\Pages\Forms\PaymentsForm.xaml;Views\Pages\Forms\ProductsForm.xaml;Views\Pages\Forms\PurchaseOrdersForm.xaml;Views\Pages\Forms\PurchasesForm.xaml;Views\Pages\Forms\ReturnsForm.xaml;Views\Pages\Forms\SalesForm.xaml;Views\Pages\Lists\BillingPage.xaml;Views\Pages\Lists\CustomersPage.xaml;Views\Pages\Lists\DoctorsPage.xaml;Views\Pages\Lists\LedgersPage.xaml;Views\Pages\Lists\PaymentsPage.xaml;Views\Pages\Lists\ProductsPage.xaml;Views\Pages\Lists\PurchaseOrdersPage.xaml;Views\Pages\Lists\PurchasesPage.xaml;Views\Pages\Lists\ReturnsPage.xaml;Views\Pages\Lists\SalesPage.xaml;Views\Pages\Lists\StockPage.xaml;Views\Pages\Shared\DashboardPage.xaml;Views\Pages\Shared\NotificationsPage.xaml;Views\Pages\Shared\ReportsPage.xaml;Views\Pages\Shared\SyncPage.xaml;
 
 False

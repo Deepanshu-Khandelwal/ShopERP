@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "GqDEyot5U5g=",
+  "dgSpecHash": "GLeSuVVny6Y=",
   "success": true,
-  "projectFilePath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj",
+  "projectFilePath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asusw_6kfs7ug\\.nuget\\packages\\azure.core\\1.50.0\\azure.core.1.50.0.nupkg.sha512",
     "C:\\Users\\asusw_6kfs7ug\\.nuget\\packages\\azure.storage.blobs\\12.27.0\\azure.storage.blobs.12.27.0.nupkg.sha512",

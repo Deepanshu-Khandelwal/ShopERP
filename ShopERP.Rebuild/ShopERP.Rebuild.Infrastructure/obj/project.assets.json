@@ -2298,11 +2298,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj",
       "projectName": "ShopERP.Rebuild.Infrastructure",
-      "projectPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\asusw_6kfs7ug\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\asusw_6kfs7ug\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2317,8 +2317,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj": {
-              "projectPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj"
+            "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj": {
+              "projectPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj"
             }
           }
         }

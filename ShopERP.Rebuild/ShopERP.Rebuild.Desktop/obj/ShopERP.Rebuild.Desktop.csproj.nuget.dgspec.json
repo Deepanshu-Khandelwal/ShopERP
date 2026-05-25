@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj": {}
+    "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj": {
+    "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj",
+        "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj",
         "projectName": "ShopERP.Backend",
-        "projectPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj",
+        "projectPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj",
         "packagesPath": "C:\\Users\\asusw_6kfs7ug\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Backend\\obj\\",
+        "outputPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\asusw_6kfs7ug\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -128,14 +128,14 @@
         }
       }
     },
-    "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj": {
+    "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj",
+        "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj",
         "projectName": "ShopERP.Rebuild.Core",
-        "projectPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj",
+        "projectPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj",
         "packagesPath": "C:\\Users\\asusw_6kfs7ug\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\obj\\",
+        "outputPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\asusw_6kfs7ug\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -201,14 +201,14 @@
         }
       }
     },
-    "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj": {
+    "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj",
+        "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj",
         "projectName": "ShopERP.Rebuild.Desktop",
-        "projectPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj",
+        "projectPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\ShopERP.Rebuild.Desktop.csproj",
         "packagesPath": "C:\\Users\\asusw_6kfs7ug\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\obj\\",
+        "outputPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Desktop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\asusw_6kfs7ug\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -223,14 +223,14 @@
           "net9.0-windows7.0": {
             "targetAlias": "net9.0-windows",
             "projectReferences": {
-              "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj": {
-                "projectPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj"
+              "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj": {
+                "projectPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj"
               },
-              "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj": {
-                "projectPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj"
+              "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj": {
+                "projectPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj"
               },
-              "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj"
+              "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj"
               }
             }
           }
@@ -309,14 +309,14 @@
         }
       }
     },
-    "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj": {
+    "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj",
         "projectName": "ShopERP.Rebuild.Infrastructure",
-        "projectPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj",
+        "projectPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\ShopERP.Rebuild.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\asusw_6kfs7ug\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\obj\\",
+        "outputPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\asusw_6kfs7ug\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -331,8 +331,8 @@
           "net9.0": {
             "targetAlias": "net9.0",
             "projectReferences": {
-              "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj": {
-                "projectPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj"
+              "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj": {
+                "projectPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj"
               }
             }
           }

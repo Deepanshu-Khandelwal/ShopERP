@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj",
+      "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj",
       "projectName": "ShopERP.Rebuild.Core",
-      "projectPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj",
+      "projectPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\ShopERP.Rebuild.Core.csproj",
       "packagesPath": "C:\\Users\\asusw_6kfs7ug\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\obj\\",
+      "outputPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Rebuild\\ShopERP.Rebuild.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\asusw_6kfs7ug\\AppData\\Roaming\\NuGet\\NuGet.Config"

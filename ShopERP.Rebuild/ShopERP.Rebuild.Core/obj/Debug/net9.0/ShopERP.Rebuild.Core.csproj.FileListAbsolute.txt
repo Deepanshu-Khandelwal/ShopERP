@@ -21,3 +21,15 @@ C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\ob
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ShopERP.Rebuild.Core.pdb
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ref\ShopERP.Rebuild.Core.dll
 C:\Users\asusw_6kfs7ug\Documents\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ShopERP.Rebuild.Core.sourcelink.json
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\bin\Debug\net9.0\ShopERP.Rebuild.Core.deps.json
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\bin\Debug\net9.0\ShopERP.Rebuild.Core.dll
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\bin\Debug\net9.0\ShopERP.Rebuild.Core.pdb
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ShopERP.Rebuild.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ShopERP.Rebuild.Core.AssemblyInfoInputs.cache
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ShopERP.Rebuild.Core.AssemblyInfo.cs
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ShopERP.Rebuild.Core.csproj.CoreCompileInputs.cache
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ShopERP.Rebuild.Core.sourcelink.json
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ShopERP.Rebuild.Core.dll
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\refint\ShopERP.Rebuild.Core.dll
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ShopERP.Rebuild.Core.pdb
+C:\Users\asusw_6kfs7ug\Desktop\ShopERP\ShopERP.Rebuild\ShopERP.Rebuild.Core\obj\Debug\net9.0\ref\ShopERP.Rebuild.Core.dll

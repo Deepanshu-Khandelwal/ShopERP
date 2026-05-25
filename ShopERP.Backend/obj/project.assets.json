@@ -4551,11 +4551,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj",
+      "projectUniqueName": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj",
       "projectName": "ShopERP.Backend",
-      "projectPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj",
+      "projectPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Backend\\ShopERP.Backend.csproj",
       "packagesPath": "C:\\Users\\asusw_6kfs7ug\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\asusw_6kfs7ug\\Documents\\ShopERP\\ShopERP.Backend\\obj\\",
+      "outputPath": "C:\\Users\\asusw_6kfs7ug\\Desktop\\ShopERP\\ShopERP.Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\asusw_6kfs7ug\\AppData\\Roaming\\NuGet\\NuGet.Config"
