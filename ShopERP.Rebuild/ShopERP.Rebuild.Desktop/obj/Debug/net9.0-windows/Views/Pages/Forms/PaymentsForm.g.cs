@@ -51,7 +51,7 @@ namespace ShopERP.Rebuild.Desktop.Views.Pages.Forms {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/ShopERP.Rebuild.Desktop;component/views/pages/forms/paymentsform.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/ShopERP.Rebuild.Desktop;V1.0.0.0;component/views/pages/forms/paymentsform.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\Views\Pages\Forms\PaymentsForm.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
